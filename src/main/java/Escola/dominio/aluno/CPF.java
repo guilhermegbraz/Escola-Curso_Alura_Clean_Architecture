@@ -1,9 +1,11 @@
+package Escola.dominio.aluno;
+
 public class CPF {
 
     private String numero;
 
     public CPF(String cpf) {
-        if(! isValid(cpf)) throw new IllegalArgumentException("CPF invalid");
+        if(! isValid(cpf)) throw new IllegalArgumentException("Escola.dominio.aluno.CPF invalid");
 
         this.numero = cpf;
     }

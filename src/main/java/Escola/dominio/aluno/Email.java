@@ -1,4 +1,4 @@
-
+package Escola.dominio.aluno;
 
 public class Email {
     //VALUE OBJECT
@@ -6,7 +6,7 @@ public class Email {
     private String endereco;
 
     public Email(String email) throws IllegalArgumentException{
-        if(!isValid(email)) throw new IllegalArgumentException("Email is invalid");
+        if(!isValid(email)) throw new IllegalArgumentException("Escola.dominio.aluno.Email is invalid");
 
         this.endereco = email;
     }
